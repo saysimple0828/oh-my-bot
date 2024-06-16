@@ -2,32 +2,32 @@ import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 import { AiOutlineBell } from "react-icons/ai";
 
-interface NavbarProps {
+interface headerProps {
   leftIcons: string[];
   title: string;
   rightIcons: string[];
 }
 
-const Navbar: React.FC<NavbarProps> = ({ title }) => {
+const Header: React.FC<headerProps> = ({ title }) => {
   return (
-    <nav className="navbar">
-      <div className="navbar-brand">
-        <FiArrowLeft className="back-button" />
+    <div className="header">
+      <div className="header-brand">
+      <FiArrowLeft className="back-button" />
       </div>
-      <div className="navbar-title">
+      <div className="header-title">
         <h1>{title}</h1>
       </div>
-      <div className="navbar-menu">
-        <ul className="navbar-nav">
-          <li className="nav-item">
+      <div className="header-menu">
+        <ul className="header-nav">
+          <li className="header-item">
             <a href="/notifications">
               <AiOutlineBell />
             </a>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   );
 };
 
-export default Navbar;
+export default Header;

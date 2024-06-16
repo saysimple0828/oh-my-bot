@@ -1,0 +1,42 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  background-color: ghostwhite;
+  height: 100vh;
+}
+
+.chatBox {
+  width: calc(100vw - 292px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: scroll;
+}
+
+.messageInput {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  margin-top: 20px;
+  width: calc(100vw - 292px);
+}
+
+.messageInputBox {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.sendMessageButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}

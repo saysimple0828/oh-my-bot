@@ -1,14 +1,11 @@
-import type { Metadata } from "next";
+import Chat from "@/feature/chat/components/Chat";
 
-export const metadata: Metadata = {
-  title: "home",
-  description: "The app's Home page.",
+const Page: React.FC = () => {
+  return (
+    <div>
+      <Chat />
+    </div>
+  );
 };
 
-export default function Home() {
-  return (
-    <main>
-      <div>Hello world!</div>
-    </main>
-  );
-}
+export default Page;
